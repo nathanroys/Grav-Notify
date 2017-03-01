@@ -4,6 +4,7 @@ Grav Notify is a simple Grav plugin created to allow Bootstrap notifications to 
 To install the plugin you must copy the plugin to the plugins folder. 
 
 > user/plugins
+
 ## Usage
 Once installed notifications can be created by adding a combination of some variables in the frontmatter of the page, the available options are listed below.
 > message - The message to display in the nofication **(Required)**
