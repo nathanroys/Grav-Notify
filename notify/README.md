@@ -1,50 +1,51 @@
-# Notify Plugin
-
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.**
-
-The **Notify** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Bootstrap Notify for Grav
-
+<snippet>
+  <content>
+# Grav Notify
+Grav Notify is a simple Grav plugin created to allow Bootstrap notifications to be shown. This plugin uses the 'frontmatter' of a page to initiate a notification and you can customise some aspects of the notification.
 ## Installation
+To install the plugin you must copy the plugin to the plugins folder.
 
-Installing the Notify plugin can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.
-
-### GPM Installation (Preferred)
-
-The simplest way to install this plugin is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's terminal (also called the command line).  From the root of your Grav install type:
-
-    bin/gpm install notify
-
-This will install the Notify plugin into your `/user/plugins` directory within Grav. Its files can be found under `/your/site/grav/user/plugins/notify`.
-
-### Manual Installation
-
-To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `notify`. You can find these files on [GitHub](https://github.com/nathan-roys/grav-plugin-notify) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
-
-You should now have all the plugin files under
-
-    /your/site/grav/user/plugins/notify
-	
-> NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Error](https://github.com/getgrav/grav-plugin-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) to operate.
-
-## Configuration
-
-Before configuring this plugin, you should copy the `user/plugins/notify/notify.yaml` to `user/config/plugins/notify.yaml` and only edit that copy.
-
-Here is the default configuration and an explanation of available options:
-
-```yaml
-enabled: true
-```
+> user/plugins
 
 ## Usage
+Once installed notifications can be created by adding a combination of some variables in the frontmatter of the page, the available options are listed below.
+> message - The message to display in the nofication **(Required)**
+> type - The type of message **(Required)** *(info, warning, success, danger)*
+> delay - The number of milliseconds to remain displayed
+> dismissable - If the user can dismiss the notification *(true/false)*
+> offset.from - Where to show the notification from *(top/bottom)*
+> offset.amount - The amount of pixels to offset
 
-**Describe how to use the plugin.**
+    notify:
+	    message: 'This is a warning'
+	    type: warning
+
+Above code shows bare minimum required to show a notification.
+
+    notify:
+    message: 'Hello world!!!!'
+    type: warning
+    delay: 6000
+    dismissable: false
+    position: left
+    offset:
+        from: top
+        amount: 25
+
+Above code shows all options in use.
+
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## History
+01/03/2017 - Released on GitHub
 
 ## Credits
-
-**Did you incorporate third-party code? Want to thank somebody?**
-
-## To Do
-
-- [ ] Future plans, if any
-
+[bootstrap-growl](https://github.com/ifightcrime/bootstrap-growl) by [Nick Larson](https://github.com/ifightcrime)
+[Grav](https://github.com/getgrav/grav)
+</content>
+</snippet>
