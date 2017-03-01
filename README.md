@@ -1,3 +1,5 @@
+<snippet>
+  <content>
 # Grav Notify
 Grav Notify is a simple Grav plugin created to allow Bootstrap notifications to be shown. This plugin uses the 'frontmatter' of a page to initiate a notification and you can customise some aspects of the notification.
 ## Installation
@@ -38,8 +40,12 @@ Above code shows all options in use.
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ## History
 01/03/2017 - Released on GitHub
+
 ## Credits
 [bootstrap-growl](https://github.com/ifightcrime/bootstrap-growl) by [Nick Larson](https://github.com/ifightcrime)
 [Grav](https://github.com/getgrav/grav)
+</content>
+</snippet>
