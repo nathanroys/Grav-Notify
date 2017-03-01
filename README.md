@@ -15,6 +15,8 @@ Once installed notifications can be created by adding a combination of some vari
     offset.from - Where to show the notification from *(top/bottom)*
     offset.amount - The amount of pixels to offset
 
+All variables are optional apart from message and type.
+
     notify:
 	    message: 'This is a warning'
 	    type: warning
